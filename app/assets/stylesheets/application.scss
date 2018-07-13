@@ -1,8 +1,9 @@
 @import "colors";
 @import "globals";
+@import "browserSupport";
 
 .intro {
-  overflow: hidden;
+  @include overflow-hidden;
 }
 
   .intro header {
@@ -33,10 +34,7 @@
     left: -3em;
     line-height: 2em;
     padding: 1em;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
+    @include transform-rotate;
   }
 
   .intro header h2 {
@@ -146,7 +144,7 @@
   @media (min-width: 64em) {
     .main{
       background: url(http://www.csszengarden.com/221/mid-century-1.jpg) no-repeat center center;
-      background-size: cover;
+      @include bacground-size-cover;
       position: relative;
       top: -25em;
       z-index: 1;
@@ -166,7 +164,7 @@
       position: relative;
       h3{
         position: absolute;
-        transform: rotate(-90deg);
+        @include transform-rotate;
         left: -4em;
         top: 7em;
       }
@@ -246,8 +244,8 @@
       width: 75%;
       margin-right: 0;
       z-index: 2;
-      h3{
-        transform: rotate(-90deg);
+      h3{ 
+        @include transform-rotate;
         font-size: 300%;
         position: absolute;
         left: -6em;
@@ -262,7 +260,7 @@
   @media (min-width: 90em) {
     .main .requirements {
       margin-top: 63em;
-      columns: 2;
+      @include column-count;
       width: 60%;
      }
   }
@@ -307,7 +305,7 @@
   .sidebar {
     background: $pink;
     color: $whiteFont;
-    overflow: hidden;
+    @include overflow-hidden;
     .select {
       margin: 0;
       padding: 2em 0 1em 1em;
@@ -407,7 +405,7 @@
 .sidebar .design-archives {
   background: $blue;
   padding: 4em 1em 1em 1em;
-  overflow: hidden;
+  @include overflow-hidden;
 }
 @media (min-width: 64em) {
   .sidebar .design-archives {
@@ -427,8 +425,8 @@
 .sidebar .zen-resources {
   background: $blue url(http://www.csszengarden.com/221/icon-circles.svg) no-repeat center bottom;
   background-size: 33%;
-  padding: 2em 1em 10em 1em; 
-  overflow: hidden;
+  padding: 2em 1em 10em 1em;
+  @include overflow-hidden;
 }
 @media (min-width: 64em) {
   .sidebar .zen-resources {
@@ -448,7 +446,7 @@
 @media (min-width: 64em) {
   .sidebar .design-archives h3, .sidebar .zen-resources h3 {
     position: absolute;
-    transform: rotate(-90deg);
+    @include transform-rotate;
     margin-left: -12%;
     margin-top: 5%;
     z-index: 3;
