@@ -35,7 +35,7 @@
 
 @mixin column-count ($count: 2) {
   -moz-column-count: $count;
-  -moz-column-gap: "#{$count}em";
+  -moz-column-gap: #{$count}em;
   -webkit-column-count: $count;
-  -webkit-column-gap:  "#{$count}em";
+  -webkit-column-gap:  #{$count}em;
 }
