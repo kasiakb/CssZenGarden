@@ -33,10 +33,16 @@ header,
 .summary,
 .explanation,
 .sidebar,
-.design-selection a,
-.preamble p:last-child {
+.design-selection a {
   color: $whiteFont;
 }
+
+@media (min-width: 64em) {
+  .preamble p:last-child {
+    color: $whiteFont;
+  }
+}
+
 
 a {
   color: $navy;
@@ -56,7 +62,13 @@ a:hover {
 }
 
 .design-selection nav ul li::before {
-  font-size: 700%;
+  font-size: 300%;
+}
+
+@media (min-width: 64em) {
+  .design-selection nav ul li::before {
+    font-size: 700%;
+  }
 }
 
 @media (min-width: 64em) {

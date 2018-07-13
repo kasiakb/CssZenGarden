@@ -1,0 +1,129 @@
+.intro {
+  @include overflow-hidden;
+}
+
+.intro header {
+  position: relative;
+  height: 20em;
+  width: 100%;
+  background: $orange;
+}
+
+@media(min-width: 64em) {
+  .intro header{
+    height: 27em;
+  }
+}
+
+@media(min-width: 90em) {
+  .intro header{
+  width: 40%;
+  height: 50em;
+  float: left;
+  background: $pink;
+  }
+}
+
+.intro header h1 {
+  position: absolute;
+  top: 4.2em;
+  left: -3em;
+  padding: 1em;
+  @include transform-rotate;
+}
+
+.intro header h2 {
+  position: relative;
+  width: 66.7%;
+  float: right;
+  background: $navy url(http://www.csszengarden.com/221/icon-star.svg) no-repeat left bottom;
+  background-size: 49%; 
+  height: 100%;
+  padding: 1em 0.5em 0 
+}
+
+@media(min-width: 90em) {
+  .intro header h2 {
+  width: 50%;
+  padding: 6em 0.5em 0 0.5em;
+  background-size: 101%;
+  }
+}
+
+.intro .summary {
+  position: relative;
+  width: 100%;
+  background: $pink url(http://www.csszengarden.com/221/icons-3-pack.svg) no-repeat center bottom;
+  background-size: 101%; 
+  padding: 2em 1em 37% 1em;
+}
+
+@media(min-width: 90em) {
+  .intro .summary {
+  width: 60%;
+  height: 50em;
+  float: left;
+  padding: 16.3em 2em 10em 2em;
+  }
+}
+
+.intro .summary p {
+  margin: 0 0 1em 0;
+}
+
+@media (min-width: 64em) {
+  .intro .summary p {
+    margin: 0 0 1em 35%;
+  }
+}
+@media (min-width: 90em) {
+  .intro .summary p {
+    margin: 0 0 2em 0;
+    width: 60%;
+  }
+}
+
+.intro .preamble {
+  position: relative;
+  padding: 2em 1em 2em 1em;
+}
+
+@media (min-width: 64em) {
+  .intro .preamble {
+    padding: 2em 1em 28em 1em;
+    h3, p {
+      margin: 1em 35% 1em 0;
+    }
+    p:last-child {
+      position: absolute;
+      float: left;
+      width: 33.3%;
+      padding: 6em 1em 10em 1em;
+      margin: 0;
+      right: 0;
+      top: -1em;
+      background: $orange;
+      z-index: 2;
+    }
+  }
+}
+
+@media (min-width: 90em) {
+  .intro .preamble {
+    float: left;
+    width: 60.1%;
+    padding: 8em 0.5em 32em 0em;
+    margin-left: 20%;
+    h3, p {
+      width: 66.7%;
+    }
+    p:last-child {
+      position: absolute;
+      width: 33.65%;
+      top: 0em;
+      background: $blue;
+      padding: 10em 1em 19em 1em;
+      z-index: 2;
+    }
+  }
+}

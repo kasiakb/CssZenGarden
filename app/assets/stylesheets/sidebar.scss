@@ -1,0 +1,160 @@
+.sidebar {
+  background: $pink;
+  overflow: hidden;
+  .select {
+    margin: 0;
+    padding: 2em 0 1em 1em;
+  }
+}
+@media (min-width: 64em) {
+  .sidebar {
+    margin-top: 65em;
+    padding-top: 20em;
+    .design-selection h3 {
+      text-align: right;
+      padding: 1em;
+    }
+  }
+}
+
+@media (min-width: 90em) {
+  .sidebar {
+    margin-top: 55em;
+    padding-top: 20em;
+    .design-selection h3 {
+      position: absolute;
+      width: 20%;
+      padding: 5em 1em;
+      text-align: left;
+      float: left;
+    }
+  }
+}
+
+@media (min-width: 90em) {
+  .sidebar .design-selection nav {
+    width: 80%;
+    margin-left: 20%;
+    padding: 1em 0 2em 0;
+  }
+}
+
+.sidebar .design-selection {
+  nav ul li {
+    position: relative;
+    padding: 5em 1em 2em 1em;
+    a {
+      border-bottom: none;
+    }
+  }
+}
+
+@for $number from 1 through 8 {
+  .sidebar .design-selection nav ul li:nth-child(#{$number}) {
+    @if $number == 1 or $number == 5 {
+      background: $navy;
+    } @else if $number == 2 or $number == 4 or $number == 6 or $number == 8 {
+      background: $orange;
+    } @else {
+      background: $blue;
+    }
+  }
+}
+
+@for $number from 1 through 8 {
+  .sidebar .design-selection nav ul li:nth-child(#{$number})::before {
+    content: "#{$number}";
+    display: block;
+    padding-bottom: 0.25em; 
+  }
+}
+
+@media (min-width: 64em) {
+  .sidebar .design-selection nav ul li {
+    list-style: none;
+    color: #ffffff;
+    width: 25%;
+    padding: 10em 1em 2em 1em;
+    float: left;
+    a{
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 64em) {
+  .sidebar .design-selection nav ul li:nth-child(1) {
+    margin-top: -29em;
+    padding: 34.6em 1em 2em 1em;
+  }
+}
+
+@media (min-width: 64em) {
+  .sidebar .design-selection nav ul li:nth-child(1) {
+    margin-top: -32em;
+    padding: 42em 1em 2em 1em;
+  }
+}
+
+.sidebar .design-archives {
+  background: $blue;
+  padding: 4em 1em 1em 1em;
+  @include overflow-hidden;
+}
+
+@media (min-width: 64em) {
+  .sidebar .design-archives {
+    width: 25%;
+    margin: 0 25% 0 50%;
+    padding: 10em 1em 3em 1em;
+  }
+}
+
+@media (min-width: 90em) {
+  .sidebar .design-archives {
+    width: 20%;
+    margin: 0;
+    margin-left: 60%;
+  }
+}
+
+.sidebar .zen-resources {
+  background: $blue url(http://www.csszengarden.com/221/icon-circles.svg) no-repeat center bottom;
+  background-size: 33%;
+  padding: 2em 1em 10em 1em;
+  @include overflow-hidden;
+}
+
+@media (min-width: 64em) {
+  .sidebar .zen-resources {
+    width: 25%;
+    margin: 0 25% 0 50%;
+    padding: 8em 1em 22em 1em;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 90em) {
+  .sidebar .zen-resources {
+    width: 20%;
+    margin: 0;
+    margin-left: 60%;
+  }
+}
+
+@media (min-width: 64em) {
+  .sidebar .design-archives h3, .sidebar .zen-resources h3 {
+    position: absolute;
+    @include transform-rotate;
+    margin-left: -12%;
+    margin-top: 5%;
+    z-index: 3;
+  }
+}
+
+@media (min-width: 90em) {
+  .sidebar .design-archives h3, .sidebar .zen-resources h3 {
+    margin-left: -8%;
+    margin-top: 3%;
+  }
+}
