@@ -1,3 +1,8 @@
+/* 
+==========================================================================
+Intro
+==========================================================================
+*/
 .intro {
   @include overflow-hidden;
 }
@@ -42,6 +47,12 @@
   padding: 1em 0.5em 0 
 }
 
+@media(min-width: 53em) {
+  .intro header h2 {
+  background-size: 40%;
+  }
+}
+
 @media(min-width: 90em) {
   .intro header h2 {
   width: 50%;
@@ -76,6 +87,7 @@
     margin: 0 0 1em 35%;
   }
 }
+
 @media (min-width: 90em) {
   .intro .summary p {
     margin: 0 0 2em 0;

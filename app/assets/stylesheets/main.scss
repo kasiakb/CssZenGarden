@@ -1,3 +1,8 @@
+/* 
+==========================================================================
+Main
+==========================================================================
+*/
 .main {
   margin-bottom: 1em;
 }
@@ -9,7 +14,7 @@
     position: relative;
     top: -25em;
     z-index: 1;
-    padding-top: 20em;
+    padding: 20em 0;
   }
 }
 
@@ -50,6 +55,7 @@
 .main .participation {
  padding: 1em ;
  position: relative;
+ background: $mainbackground;
 }
 
 @media (min-width: 64em) {
@@ -64,7 +70,7 @@
 @media (min-width: 90em) {
   .main .participation {
     background: $mainbackground;
-    margin-top: 17em;
+    margin-top: 14em;
     width: 40%;
     left: 20%;
   }
@@ -79,6 +85,7 @@
 
 @media (min-width: 64em) {
   .main .benefits {
+    background-size: 100%;
     position: absolute;
     float: right;
     width: 33.3%;
@@ -88,12 +95,18 @@
   }
 }
 
+@media (min-width: 70em) {
+  .main .benefits {
+    background-size: 85%;
+  }
+}
+
 @media (min-width: 90em) {
   .main .benefits {
     background-size: 100%;
     width: 20%;
     padding: 22em 1em 25em 1em;
-    margin-top: 6em;
+    margin-top: 3em;
     right: 20%;
   }
 }
@@ -132,50 +145,25 @@
   }
 }
 
-// .main .requirements::before{
-  
-
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: -66.666%;
-//   width: 66.6666%;
-//   height: 45em;
-//   background: url(http://www.csszengarden.com/221/mid-century-2.jpg) no-repeat left center;
-//   background-size: cover;
-//   z-index: 2;
-//   margin-top: 0;
-//   padding: 1em;
-    
-// }
-
-// @media (min-width: 70em) {
-//   .main .requirements::before{
-//     width: 60%;
-//     height: 40em;
-//     left: -60%;
-//   }
-// }
-
 @media (min-width: 64em) {
   .main .requirements::before{
     content: "";
     position: absolute;
     top: 0;
-    left: -70.666%;
+    left: -66.666%;
     width: 66.6666%;
     height: 45em;
     padding: 1em;
     background: url(http://www.csszengarden.com/221/mid-century-2.jpg) no-repeat left center;
     background-size: cover; 
     z-index: 2;
-    overflow: hidden;
+    @include box-sizing-border-box;
   }
 }
 
 @media (min-width: 90em) {
   .main .requirements::before{
-    left: -62%;
+    left: -60%;
     width: 60%;
     height: 40em;
   }
@@ -187,8 +175,7 @@
 
 @media (min-width: 64em) {
   .main footer {
-    position: relative;
-    margin-top: 18%;
+    position: absolute;
     bottom: 1em;
     a {
       display: block;
