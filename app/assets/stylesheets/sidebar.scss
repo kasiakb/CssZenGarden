@@ -12,7 +12,7 @@ Sidebar
   }
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .sidebar {
     margin-top: 65em;
     padding-top: 20em;
@@ -23,7 +23,7 @@ Sidebar
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .sidebar {
     margin-top: 55em;
     padding-top: 20em;
@@ -37,7 +37,7 @@ Sidebar
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .sidebar .design-selection nav {
     width: 80%;
     margin-left: 20%;
@@ -75,7 +75,7 @@ Sidebar
   }
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .sidebar .design-selection nav ul li {
     list-style: none;
     color: #ffffff;
@@ -88,14 +88,14 @@ Sidebar
   }
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .sidebar .design-selection nav ul li:nth-child(1) {
     margin-top: -29em;
     padding: 34.6em 1em 2em 1em;
   }
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .sidebar .design-selection nav ul li:nth-child(1) {
     margin-top: -32em;
     padding: 42em 1em 2em 1em;
@@ -108,7 +108,7 @@ Sidebar
   @include overflow-hidden;
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .sidebar .design-archives {
     width: 25%;
     margin: 0 25% 0 50%;
@@ -116,7 +116,7 @@ Sidebar
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .sidebar .design-archives {
     width: 20%;
     margin: 0;
@@ -124,7 +124,7 @@ Sidebar
   }
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .sidebar .design-archives h3,  {
     position: absolute;
     @include transform-rotate;
@@ -134,7 +134,7 @@ Sidebar
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .sidebar .design-archives h3 {
     margin-left: -8%;
     margin-top: 3%;
@@ -148,7 +148,7 @@ Sidebar
   @include overflow-hidden;
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .sidebar .zen-resources {
     width: 25%;
     margin: 0 25% 0 50%;
@@ -157,7 +157,7 @@ Sidebar
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .sidebar .zen-resources {
     width: 20%;
     margin: 0;
@@ -165,7 +165,7 @@ Sidebar
   }
 }
 
-@media (min-width: 64em) {
+@media ($md) {
    .sidebar .zen-resources h3 {
     position: absolute;
     @include transform-rotate;
@@ -175,7 +175,7 @@ Sidebar
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .sidebar .zen-resources h3 {
     margin-left: -9%;
     margin-top: 3%;

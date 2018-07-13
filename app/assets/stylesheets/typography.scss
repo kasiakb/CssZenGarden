@@ -42,7 +42,7 @@ header,
   color: $whiteFont;
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .preamble p:last-child {
     color: $whiteFont;
   }
@@ -70,13 +70,13 @@ a:hover {
   font-size: 300%;
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .design-selection nav ul li::before {
     font-size: 700%;
   }
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .requirements h3 {
     font-size: 300%;
   }

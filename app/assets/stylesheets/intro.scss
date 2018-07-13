@@ -14,13 +14,13 @@ Intro
   background: $orange;
 }
 
-@media(min-width: 64em) {
+@media($md) {
   .intro header{
     height: 27em;
   }
 }
 
-@media(min-width: 90em) {
+@media($lg) {
   .intro header{
   width: 40%;
   height: 50em;
@@ -47,13 +47,13 @@ Intro
   padding: 1em 0.5em 0 
 }
 
-@media(min-width: 53em) {
+@media($sm) {
   .intro header h2 {
   background-size: 40%;
   }
 }
 
-@media(min-width: 90em) {
+@media($lg) {
   .intro header h2 {
   width: 50%;
   padding: 6em 0.5em 0 0.5em;
@@ -69,7 +69,7 @@ Intro
   padding: 2em 1em 37% 1em;
 }
 
-@media(min-width: 90em) {
+@media($lg) {
   .intro .summary {
   width: 60%;
   height: 50em;
@@ -82,13 +82,13 @@ Intro
   margin: 0 0 1em 0;
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .intro .summary p {
     margin: 0 0 1em 35%;
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .intro .summary p {
     margin: 0 0 2em 0;
     width: 60%;
@@ -100,7 +100,7 @@ Intro
   padding: 2em 1em 2em 1em;
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .intro .preamble {
     padding: 2em 1em 28em 1em;
     h3, p {
@@ -120,7 +120,7 @@ Intro
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .intro .preamble {
     float: left;
     width: 60.1%;

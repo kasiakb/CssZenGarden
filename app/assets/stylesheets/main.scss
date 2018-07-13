@@ -7,7 +7,7 @@ Main
   margin-bottom: 1em;
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .main{
     background: url(http://www.csszengarden.com/221/mid-century-1.jpg) no-repeat center center;
     @include bacground-size-cover;
@@ -23,7 +23,7 @@ Main
   background: $navy;
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .main .explanation{
     width: 66.7%;
     position: relative;
@@ -40,7 +40,7 @@ Main
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .main .explanation{
     width: 40%;
     padding: 2em 1em;
@@ -58,7 +58,7 @@ Main
  background: $mainbackground;
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .main .participation {
     position: absolute;
     margin-top: 20em;
@@ -67,7 +67,7 @@ Main
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .main .participation {
     background: $mainbackground;
     margin-top: 14em;
@@ -83,7 +83,7 @@ Main
   padding-top: 25%;
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .main .benefits {
     background-size: 100%;
     position: absolute;
@@ -95,13 +95,13 @@ Main
   }
 }
 
-@media (min-width: 70em) {
+@media ($md-up) {
   .main .benefits {
     background-size: 85%;
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .main .benefits {
     background-size: 100%;
     width: 20%;
@@ -115,7 +115,7 @@ Main
   padding: 1em ;
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .main .requirements {
     position: absolute;
     margin-top: 65em;
@@ -137,7 +137,7 @@ Main
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .main .requirements {
     margin-top: 60em;
     @include column-count;
@@ -145,7 +145,7 @@ Main
   }
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .main .requirements::before{
     content: "";
     position: absolute;
@@ -161,7 +161,7 @@ Main
   }
 }
 
-@media (min-width: 90em) {
+@media ($lg) {
   .main .requirements::before{
     left: -60%;
     width: 60%;
@@ -170,10 +170,10 @@ Main
 }
 
 .main footer {
-  padding-left: 1em
+  padding-left: 1em;
 }
 
-@media (min-width: 64em) {
+@media ($md) {
   .main footer {
     position: absolute;
     bottom: 1em;

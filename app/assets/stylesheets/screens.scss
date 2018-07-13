@@ -1,0 +1,9 @@
+$small: 53em;
+$medium: 64em;
+$medium-up: 70em;
+$large: 90em;
+
+$sm: "min-width: #{$small}";
+$md: "min-width: #{$medium}";
+$md-up: "min-width: #{$medium-up}";
+$lg: "min-width: #{$large}";
