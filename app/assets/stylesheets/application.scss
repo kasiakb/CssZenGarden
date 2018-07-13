@@ -1,6 +1,5 @@
-@import "colors";
-@import "globals";
-@import "browserSupport";
+@import "base";
+@import "partials";
 
 .intro {
   @include overflow-hidden;
@@ -10,7 +9,6 @@
     position: relative;
     height: 20em;
     width: 100%;
-    color: $whiteFont;
     background: $orange;
   }
   @media(min-width: 64em) {
@@ -29,10 +27,8 @@
 
   .intro header h1 {
     position: absolute;
-    font-size: 100%;
     top: 4.2em;
     left: -3em;
-    line-height: 2em;
     padding: 1em;
     @include transform-rotate;
   }
@@ -44,8 +40,6 @@
     background: $navy url(http://www.csszengarden.com/221/icon-star.svg) no-repeat left bottom;
     background-size: 49%; 
     height: 100%;
-    font-size: 200%;
-    line-height: 1.25em;
     padding: 1em 0.5em 0 
   }
   @media(min-width: 90em) {
@@ -59,7 +53,6 @@
   .intro .summary {
     position: relative;
     width: 100%;
-    color: $whiteFont;
     background: $pink url(http://www.csszengarden.com/221/icons-3-pack.svg) no-repeat center bottom;
     background-size: 101%; 
     padding: 2em 1em 37% 1em;
@@ -124,7 +117,6 @@
       top: -1em;
       background: $orange;
       z-index: 2;
-      color: $whiteFont;
     }
   }
   @media (min-width: 90em) {
@@ -155,7 +147,6 @@
   .main .explanation {
     padding: 1em ;
     background: $navy;
-    color: $whiteFont;
    
   }
   @media (min-width: 64em) {
@@ -246,11 +237,9 @@
       z-index: 2;
       h3{ 
         @include transform-rotate;
-        font-size: 300%;
         position: absolute;
         left: -6em;
         z-index: 3;
-        // top: 0.5em;
       }
       p {
         margin: 0 0 1em 0;
@@ -304,7 +293,6 @@
 
   .sidebar {
     background: $pink;
-    color: $whiteFont;
     @include overflow-hidden;
     .select {
       margin: 0;
@@ -347,12 +335,10 @@
      position: relative;
       padding: 5em 1em 2em 1em;
       a {
-        color: $whiteFont;
         border-bottom: none;
       }
     }
   }
-  
 
   @for $number from 1 through 8 {
     .sidebar .design-selection nav ul li:nth-child(#{$number}) {
@@ -363,13 +349,12 @@
       } @else {
         background: $blue;
       }
-  }
+    }
   }
 
   @for $number from 1 through 8 {
     .sidebar .design-selection nav ul li:nth-child(#{$number})::before {
       content: "#{$number}";
-      font-size: 700%;
       display: block;
       padding-bottom: 0.25em; 
     }

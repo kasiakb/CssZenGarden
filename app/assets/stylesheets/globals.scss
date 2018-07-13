@@ -8,24 +8,9 @@
 
 html,
 body {
-  font-family: "ff-meta-web-pro", sans-serif;
   text-rendering: optimizeLegibility;
-  font-size: 100%;
-  line-height: 26px;
   background: $mainbackground;
   background-size: 60%;
-  color: $navy;
-  
-}
-a {
-  color: $navy;
-  text-decoration: none;
-  border-bottom: 1px solid $navy;
-  @include transition-ease-out;
-}
-a:hover {
-  color: rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .page-wrapper {
@@ -35,18 +20,4 @@ a:hover {
   margin: 0 auto;
   padding: 0;
   @include overflow-hidden;
-}
-
-p {
-  margin: 1em 0;
-}
-
-h3{
-  font-size: 150%;
-  margin: 1em 0;
-  display: block;
-}
-
-li{
-  list-style-type: none;
 }

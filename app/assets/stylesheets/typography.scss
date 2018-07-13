@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 26px;
+  color: $navy;
+}
+
+h1{
+  font-size: 100%;
+  line-height: 2em;
+}
+
+h2 {
+  font-size: 200%;
+  line-height: 1.25em;
+}
+
+h3{
+  font-size: 150%;
+  margin: 1em 0;
+  display: block;
+}
+
+p {
+  margin: 1em 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+header,
+.summary,
+.explanation,
+.sidebar,
+.design-selection a,
+.preamble p:last-child {
+  color: $whiteFont;
+}
+
+a {
+  color: $navy;
+  text-decoration: none;
+  border-bottom: 1px solid $navy;
+  @include transition-ease-out;
+}
+
+.summary a {
+  color: $whiteFont;
+  border-bottom: 1px solid $whiteFont;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.design-selection nav ul li::before {
+  font-size: 700%;
+}
+
+@media (min-width: 64em) {
+  .requirements h3 {
+    font-size: 300%;
+  }
+}
